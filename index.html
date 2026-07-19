@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses — knuamd.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0f172a; color: #fff; min-height: 100vh; }
+    .hero { min-height: 90vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(99,102,241,0.15), transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(59,130,246,0.1), transparent 60%); }
+    .content { position: relative; z-index: 1; max-width: 700px; }
+    .badge { display: inline-block; padding: 0.5rem 1.5rem; border-radius: 9999px; background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3); color: #818cf8; font-size: 0.875rem; margin-bottom: 2rem; }
+    h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 1rem; }
+    h1 span { background: linear-gradient(135deg, #60a5fa, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    p { color: #94a3b8; font-size: 1.25rem; margin-bottom: 2rem; }
+    .btn { display: inline-block; padding: 1rem 2.5rem; border-radius: 0.75rem; font-weight: 600; font-size: 1rem; text-decoration: none; transition: all 0.2s; }
+    .btn-primary { background: linear-gradient(135deg, #3b82f6, #6366f1); color: #fff; }
+    .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 3rem; max-width: 800px; width: 100%; }
+    .feature { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 1rem; padding: 1.5rem; text-align: left; }
+    .feature h3 { font-size: 1.125rem; margin-bottom: 0.5rem; }
+    .feature p { font-size: 0.875rem; color: #94a3b8; margin-bottom: 0; }
+    .feature .emoji { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(15,23,42,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+    nav a.logo { font-size: 1.25rem; font-weight: 800; background: linear-gradient(135deg, #f472b6, #facc15); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+    nav a.back { color: #94a3b8; text-decoration: none; font-size: 0.875rem; }
+    nav a.back:hover { color: #fff; }
+    footer { text-align: center; padding: 2rem; color: #475569; font-size: 0.875rem; border-top: 1px solid rgba(255,255,255,0.05); }
+    footer strong { color: #fff; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="https://knuamd.com" class="logo">knuamd</a>
+    <a href="https://knuamd.com" class="back">← กลับหน้าหลัก</a>
+  </nav>
+  <section class="hero">
+    <div class="content">
+      <div class="badge">🎓 Moodle LMS</div>
+      <h1>คอร์สเรียน<span>ออนไลน์</span></h1>
+      <p>คอร์สเรียนครบวงจร ผสาน Moodle LMS ติดตามผลการเรียน พร้อมใบรับรอง</p>
+      <a href="#courses" class="btn btn-primary">ดูคอร์สทั้งหมด</a>
+      <div class="features">
+        <div class="feature">
+          <span class="emoji">📖</span>
+          <h3>คอร์สเรียนครบวงจร</h3>
+          <p>วิดีโอ แบบฝึกหัด ควิซ และงานมอบหมาย</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">📊</span>
+          <h3>ติดตามผลการเรียน</h3>
+          <p>ดูพัฒนาการ คะแนน และเวลาเรียน</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">🏆</span>
+          <h3>ใบรับรอง</h3>
+          <p>รับใบรับรองเมื่อเรียนจบคอร์ส</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>© 2026 <strong>Aeesia</strong>. All rights reserved.</footer>
+</body>
+</html>
